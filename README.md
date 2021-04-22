@@ -21,3 +21,21 @@ int main() {
 }
 
 ```
+### Exercise 5-2: Write a program to calculate the volume of a sphere.
+
+```c
+#include <stdio.h>
+float myradius;   
+float myvolume;              
+const float PI = 3.14159265358979323846264338327950288419716939937510;
+
+int main() {
+	printf("Input the radius of the sphere : ");
+	
+	myvolume = (4.0 / 3.0) * PI * (myradius * myradius * myradius);  /* volumn=(4/3) * pi * r^3*/
+	printf("The volume of sphere is %f.\n", myvolume);
+
+	return(0);
+}
+
+```
