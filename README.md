@@ -39,3 +39,21 @@ int main() {
 }
 
 ```
+### Exercise 5 -4: Write a program that converts kilometers per hour to miles per h our.
+miles = (kilometer ·0.6213712
+
+```c
+#include <stdio.h>
+float kmph;              
+float miph;              
+
+int main()
+{
+	printf("Input kilometers per hour: ");
+
+	miph = (kmph * 0.6213712);
+	printf("%f miles per hour\n", miph);
+
+	return(0);
+}
+
