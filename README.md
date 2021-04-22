@@ -78,3 +78,26 @@ int main() {
 	return(0);
 }
 ```
+### Exercise 5 -6: Write a program that takes an integer as the number of minutes, and
+outputs the total hours and minutes (90 minutes = 1 hour 30 minutes).
+
+```c
+#include <stdio.h>
+int tot_mins;  
+int hrs;         
+int mins;        
+
+const int MINaHOUR = 60;      /* number of minutes in an hour */
+
+int main() {
+	printf("Input minutes: ");
+	fgets(line_text, sizeof(line_text), stdin);
+	sscanf(line_text, "%d", &tot_mins);
+
+	hrs = (tot_mins / MINaHOUR);
+	mins = (tot_mins % MINaHOUR);
+printf("%d Hours, %d Minutes.\n", hrs, mins);
+
+	return(0);
+}
+```
